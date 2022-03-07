@@ -2,8 +2,9 @@
 A simple utility that proxies command line instructions, time it, and send an e-mail to myself when the instruction finishes.
 
 ## Prerequisites
+1. Python3 is installed on your computer;
 1. You must have a valid public e-mail service account (e.g. Gmail, QQ mail etc.);
-1. Make sure that SMTP is enabled (you can find SMTP switch on your mail-box's settings page)
+1. Make sure that SMTP is enabled (you can find SMTP switch on your mail-box's settings page).
 
 ## Usage 
 1. Simply modify the CAPITALIZED variables at the topmost row of codes, so you can have your `mail-run` connects to your e-mail account;
