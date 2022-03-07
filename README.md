@@ -1,5 +1,7 @@
 # mail-run
-A simple utility that proxies command line instructions, time it, and intended to send an e-mail to yourself when the instruction finishes (**so you can have real-time notifications pushed to your mobile devices if you've got an e-mail client app**).
+A simple utility that proxies command line instructions, time it, and intended to send an e-mail to yourself when the instruction finishes (**so you can have real-time notifications pushed to your mobile devices if you've got an e-mail client app**). 
+
+This is useful when you are executing very heavy tasks on a remote server.
 
 ## Prerequisites
 1. Python3 is installed on your computer;
