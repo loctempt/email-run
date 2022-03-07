@@ -9,6 +9,7 @@ from datetime import timedelta
 from functools import reduce
 
 MAIL_HOST = "smtp.qq.com"
+SMTP_PORT = 587
 MAIL_SENDER = "somebody@qq.com"
 MAIL_FROM = "mail-run notifier <%s>" % MAIL_SENDER
 MAIL_LICENCE = "123456"
@@ -76,7 +77,7 @@ message['Subject'] = Header(subject, "utf-8")
 
 try:
     smtp = smtplib.SMTP()
-    smtp.connect(MAIL_HOST, 587)
+    smtp.connect(MAIL_HOST, SMTP_PORT)
     smtp.login(MAIL_SENDER, MAIL_LICENCE)
     smtp.sendmail(MAIL_SENDER, MAIL_RECEIVERS, message.as_string())
     print("mail successfully sent.")
