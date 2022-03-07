@@ -10,6 +10,7 @@ from functools import reduce
 
 MAIL_HOST = "smtp.qq.com"
 MAIL_SENDER = "somebody@qq.com"
+MAIL_FROM = "mail-run notifier <%s>" % MAIL_SENDER
 MAIL_LICENCE = "123456"
 MAIL_RECEIVERS = ["somebody@gmail.com", "Jack@qq.com"]
 
@@ -70,8 +71,7 @@ html_msg = """<!DOCTYPE html>
 </html>"""
 
 message = MIMEText(html_msg, "html", "utf-8")
-message['From'] = "mail-run notifier <jxy1996@qq.com>"
-message['To'] = "jxy"
+message['From'] = MAIL_FROM
 message['Subject'] = Header(subject, "utf-8")
 
 try:
